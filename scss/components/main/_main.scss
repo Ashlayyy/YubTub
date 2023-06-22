@@ -1,0 +1,15 @@
+@use '../../abstracts/variables';
+
+.main {
+    width: 100%;
+    padding: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+
+    &__title {
+        color: variables.$text-color;
+    }
+}
+

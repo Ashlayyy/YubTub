@@ -1,0 +1,46 @@
+{
+    "videos": [
+        {
+            "id": 1,
+            "title": "Cool cat video!",
+            "video": "video--1.mp4",
+            "comments": [
+                "Great video!",
+                "Great video!!!!"
+            ],
+            "similar": [
+                "video--2.mp4",
+                "video--3.mp4"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Funny #dog video!",
+            "video": "video--2.mp4",
+            "comments": [
+                "LOL",
+                "I dont like this",
+                "Wow!"
+            ],
+            "similar": [
+                "video--1.mp4",
+                "video--3.mp4"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "My guinea pig #animals",
+            "video": "video--3.mp4",
+            "comments": [
+                "GUINEA PIGG",
+                "hoi jeroen",
+                "yippee",
+                "mohamed is cool"
+            ],
+            "similar": [
+                "video--1.mp4",
+                "video--2.mp4"
+            ]
+        }
+    ]
+}

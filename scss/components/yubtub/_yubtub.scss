@@ -1,0 +1,9 @@
+@use '../../abstracts/variables';
+
+.yubtub {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: variables.$text-color;
+}

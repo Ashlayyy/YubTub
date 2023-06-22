@@ -1,0 +1,74 @@
+@use '../../abstracts/variables';
+
+.video {
+    position: relative;
+
+    &__player {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+    &__bar {
+        background-color: variables.$primary-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: row;
+        height: 10rem;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__uploader {
+        width: 7rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: 0.2rem solid variables.$text-color;
+    }
+
+    &__title {
+        font-size: 2.2rem;
+    }
+
+    &__controls {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    &__button {
+        background: none;
+        border: 0;
+        padding: 0;
+        color: variables.$text-color;
+        transition: 0.2s;
+
+        &--star {
+            font-size: 5rem;
+        }
+
+        &--arrow {
+            font-size: 7rem;
+        }
+
+        &--overlay {
+            position: absolute;
+            top: -2rem;
+            left: -2rem;
+            z-index: 1;
+            color: variables.$text-color;
+        }
+
+        &:hover {
+            color: variables.$accent-color;
+            cursor: pointer;
+        }
+    }
+}

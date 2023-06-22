@@ -1,0 +1,224 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+body {
+  background-color: #1a1a1e;
+  font-family: "Geologica", sans-serif;
+}
+
+.main {
+  width: 100%;
+  padding: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
+}
+.main__title {
+  color: white;
+}
+
+.yubtub {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  color: white;
+}
+
+.video {
+  position: relative;
+}
+.video__player {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.video__bar {
+  background-color: #1f1f23;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.video__details {
+  display: flex;
+  flex-direction: row;
+  height: 10rem;
+  align-items: center;
+  gap: 2rem;
+}
+.video__uploader {
+  width: 7rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+}
+.video__title {
+  font-size: 2.2rem;
+}
+.video__controls {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.video__button {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: white;
+  transition: 0.2s;
+}
+.video__button--star {
+  font-size: 5rem;
+}
+.video__button--arrow {
+  font-size: 7rem;
+}
+.video__button--overlay {
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  z-index: 1;
+  color: white;
+}
+.video__button:hover {
+  color: #a970ff;
+  cursor: pointer;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 2rem;
+}
+.comments__comment {
+  border: 0.2rem solid #535353;
+  background-color: #1f1f23;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  font-size: 2rem;
+  color: white;
+}
+.comments__uploader {
+  width: 7rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+}
+.comments__comment--add {
+  padding: 0;
+  height: 11.3rem;
+}
+.comments__input {
+  width: 80%;
+  height: 100%;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  padding-left: 2rem;
+  color: white;
+}
+.comments__button {
+  width: 20%;
+  font-size: 3rem;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: white;
+  transition: 0.2s;
+}
+.comments__button:hover {
+  color: #a970ff;
+  cursor: pointer;
+}
+
+.aside {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.aside__video {
+  width: 100%;
+  border: 0.4rem solid #535353;
+  transition: 0.2s;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.aside__video:hover {
+  border: 0.4rem solid #a970ff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    padding: 4rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main {
+    padding: 3rem;
+  }
+  .video__title {
+    font-size: 1.8rem;
+  }
+  .video__button--star {
+    font-size: 4rem;
+  }
+  .video__button--arrow {
+    font-size: 5.5rem;
+  }
+  .comments__comment {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .yubtub,
+.aside {
+    width: 100%;
+  }
+  .aside {
+    flex-wrap: wrap;
+    flex-direction: initial;
+    justify-content: center;
+    align-items: center;
+  }
+  .aside__video {
+    width: 47.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .aside {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .aside__video {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

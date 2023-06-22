@@ -1,0 +1,68 @@
+@media screen and (max-width: 1200px) {
+    .main {
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        padding: 3rem;
+    }
+
+    .video {
+        &__title {
+            font-size: 1.8rem;
+        }
+
+        &__button {
+            &--star {
+                font-size: 4rem;
+            }
+
+            &--arrow {
+                font-size: 5.5rem;
+            }
+        }
+    }
+
+    .comments {
+        &__comment {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .yubtub,
+    .aside {
+        width: 100%;
+    }
+
+    .aside {
+        flex-wrap: wrap;
+        flex-direction: initial;
+        justify-content: center;
+        align-items: center;
+
+        &__video {
+            width: 47.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aside {
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        &__video {
+            width: 100%;
+        }
+    }
+}
