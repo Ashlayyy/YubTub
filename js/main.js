@@ -101,7 +101,7 @@ class Main {
     this.mainElement = document.createElement("main");
     this.mainElement.classList.add("main");
     this.yubtub.renderer.render("body", this.mainElement);
-
+ 
     this.screenTitleElement = document.createElement('h2');
     this.screenTitleElement.classList = 'main__title';
     this.screenTitleElement.innerText = 'Twitchy';
