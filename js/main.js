@@ -101,7 +101,7 @@ class Main {
     this.mainElement = document.createElement("main");
     this.mainElement.classList.add("main");
     this.yubtub.renderer.render("body", this.mainElement);
- 
+
     this.screenTitleElement = document.createElement('h2');
     this.screenTitleElement.classList = 'main__title';
     this.screenTitleElement.innerText = 'Twitchy';
@@ -177,15 +177,14 @@ class Main {
     this.yubtub.renderer.render(".video__button--arrow", arrowIconElement);
 
     this.comments = new Comments(this, data);
-    //this.video = new Video();
+    this.video = new Video();
   }
 }
 
-/*
 class Video {
-  constructor() {}
+  constructor() { }
 }
-*/
+
 
 class Comments {
   main;
