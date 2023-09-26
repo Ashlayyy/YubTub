@@ -6,7 +6,7 @@ Dit is een project van school, de opdracht was een app bouwen waar je videos kon
 
 ## Demo (Not Live yet)
 
-https://ashlaydev.com/Encrypter
+https://ashlaydev.com/YubTub
 
 
 ## Tech Stack
